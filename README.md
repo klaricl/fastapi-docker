@@ -11,4 +11,7 @@ After that call the IP Adress of the Host you are running the docker image. You 
 `http://<IP_ADRESS>/items/1`
 Int this case, you will get the following response:
 ```json 
-{"item_id":1,"q":null}
+{"
+    item_id":1,
+    "q":null
+}
