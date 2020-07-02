@@ -53,6 +53,7 @@ def list_items(request: Request, db: Session = Depends(get_db)):
 def update_item(item_id: int, item_request: ItemRequest, db: Session = Depends(get_db)):
     item = Item()
     item.name = item_request.name
+    item.amount = item_request.amount
     
     db.add(item)
     db.commit()
