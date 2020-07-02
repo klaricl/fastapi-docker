@@ -21,6 +21,7 @@ Int this case, you will get the following response:
 The libraries required by the project are listed in the requiremnts.txt file
 The following content is added to the requiremnts.txt file:
 * jinja2 - for rendering html file
+* aiofiles - for static files
 * sqlalchemy - an SQL interface
 
 ## Additional reading and sources ##

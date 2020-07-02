@@ -37,13 +37,15 @@ def home(request: Request):
         "request": request,
     })
 
-@app.get("/items/{item_id}")
+@app.get("/items/dummy/{item_id}")
 def read_item(item_id: int, q: str = None):
     return {"item_id": item_id, "q": q}
 
 @app.get("/items/list")
 def list_items(request: Request, db: Session = Depends(get_db)):
+    print("Starting list_items")
     items = db.query(Item).all()
+    print("Items fetched")
     return templates.TemplateResponse("items.html", {
         "request": request,
         "items": items
@@ -54,6 +56,7 @@ def update_item(item_id: int, item_request: ItemRequest, db: Session = Depends(g
     item = Item()
     item.name = item_request.name
     item.amount = item_request.amount
+    item.price = item_request.price
     
     db.add(item)
     db.commit()
