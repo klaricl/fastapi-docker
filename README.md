@@ -16,3 +16,9 @@ Int this case, you will get the following response:
     "item_id":1,
     "q":null
 }
+```
+## Requirements ##
+The libraries required by the project are listed in the requiremnts.txt file
+The following content is added to the requiremnts.txt file:
+* jinja2 - for rendering html file
+* sqlalchemy - an SQL interface
