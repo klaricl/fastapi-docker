@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY requirements.txt ./
 
-RUN app-get -y update
+RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt-get -y install sqlite3
 
