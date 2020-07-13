@@ -17,6 +17,16 @@ Int this case, you will get the following response:
     "q":null
 }
 ```
+
+In **main.py** are the views and the logic developed.
+
+**database.py** establishes the connection to the database.
+
+In **models.py** are the DB tables defined.
+
+For further details about the calls, open the `http://<IP_ADDRESS>/docs` page.
+On the same page, the APIs can be tested.
+
 ## Requirements ##
 The libraries required by the project are listed in the requiremnts.txt file
 The following content is added to the requiremnts.txt file:
